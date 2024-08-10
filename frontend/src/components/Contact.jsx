@@ -13,7 +13,7 @@ const Contact = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://celebrease.onrender.com/api/v1/message/send",
         {
           name,
           email,

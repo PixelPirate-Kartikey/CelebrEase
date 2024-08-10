@@ -10,9 +10,9 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // No trailing slash needed
-    methods: ["GET", "POST"], // Add any other HTTP methods you're using
-    credentials: true, // Ensure credentials are allowed
+    origin: [process.env.FRONTEND_URL],
+    methods: ["POST"],
+    credentials: true,
   })
 );
 

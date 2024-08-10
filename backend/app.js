@@ -10,11 +10,13 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: "https://celebrease.vercel.app",
+    origin: "https://celebrease.vercel.app/",
     methods: ["POST"],
     credentials: true,
   })
 );
+
+https://celebrease.onrender.com/
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

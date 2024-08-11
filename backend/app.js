@@ -11,7 +11,7 @@ dotenv.config({ path: "./config/config.env" });
 // CORS configuration
 app.use(
   cors({
-    origin: ["https://celebrease.vercel.app", "https://celebrease.onrender.com"],
+    origin: "https://celebrease.vercel.app",
     methods: ["GET", "POST", "OPTIONS"], // Add OPTIONS method for preflight requests
     credentials: true,
   })

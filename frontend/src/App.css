@@ -429,3 +429,284 @@ footer .banner .tag div button {
     grid-gap: 20px;
   }
 }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background: #fff7ea;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 1520px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #c9c9c9;
+  position: relative;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-family: "Alex Brush", cursive;
+}
+
+nav .navLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .navLinks .links {
+  display: flex;
+  gap: 25px;
+}
+
+nav .navLinks .links a {
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1.4px;
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .navLinks .links a:hover {
+  color: #a2783a;
+  cursor: pointer;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  nav {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 30px;
+  }
+
+  nav .hamburger {
+    display: flex;
+  }
+
+  nav .navLinks {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #a2783a;
+    padding: 15px 7.5px;
+    z-index: -1;
+    transition: top 0.3s ease-in-out;
+  }
+
+  nav .showmenu {
+    top: 67px;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    z-index: 2;
+  }
+
+  nav .navLinks .links a {
+    color: #fff;
+  }
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  position: relative;
+  background: url('your-image.jpg') no-repeat center center/cover;
+}
+
+.hero .item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.hero .item h3 {
+  font-family: "Alex Brush", cursive;
+  color: #a2783a;
+  font-size: 28px;
+}
+
+.hero .item div h1 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.hero .item div p {
+  color: gray;
+  font-size: 16px;
+}
+
+.hero .item div a {
+  padding: 10px 30px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero .item div a:hover {
+  background: #a2783a;
+}
+
+/* Contact Section Styles */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.contact .banner {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.contact .banner .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #a2783a;
+  padding: 15px;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.contact .banner .item h4 {
+  font-family: "Alex Brush", cursive;
+  font-size: 2rem;
+  color: #a2783a;
+}
+
+.contact .banner .item p {
+  color: gray;
+}
+
+.contact .banner:last-child .item form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .banner:last-child .item form input,
+.contact .banner:last-child .item form textarea {
+  padding: 8px;
+  border: 1px solid #a2783a;
+  border-radius: 7px;
+  background: transparent;
+}
+
+.contact .banner:last-child .item form button {
+  padding: 10px 60px;
+  font-size: 24px;
+  color: #fff;
+  background: #a2783a;
+  font-family: "Alex Brush", cursive;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact .banner:last-child .item form button:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+.contact .banner:last-child .item form button:focus {
+  outline: none;
+}
+
+@media (max-width: 830px) {
+  .contact .banner {
+    flex-direction: column;
+  }
+}
+
+/* Footer Styles */
+footer {
+  padding: 50px 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+footer .banner .title h1 {
+  font-size: 40px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+footer .banner .title p {
+  font-family: "Alex Brush", cursive;
+  font-size: 24px;
+  color: #a2783a;
+}
+
+footer .banner .tag div input {
+  border-radius: 8px;
+  padding: 6px;
+  border: 1px solid #fff7ea;
+  background: transparent;
+}
+
+footer .banner .tag div button {
+  background: #fff7ea;
+  border: 1px solid #fff7ea;
+  padding: 7px 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+  footer .banner .tag div {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Custom Cursor on Submit Button */
+.contact .banner:last-child .item form button:hover {
+  cursor: pointer;
+}
+

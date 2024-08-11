@@ -4,21 +4,15 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
   return (
     <section className="hero">
-      <img src="/restaurant.jpg" alt="Elegant restaurant" className="hero-bg" />
-      <div className="hero-content">
-        <h3 className="brand-name">Celebrease</h3>
-        <div className="hero-text">
+      <img src="/restaurant.jpg" alt="restaurant" />
+      <div className="item">
+        <h3>Dream Maker</h3>
+        <div>
           <h1>Your Personal Dream Maker</h1>
           <p>
-            We believe it's all about BIG DREAMS and the little details that make them come true!
+            We believe that it is all about the BIG DREAMS and and the little details that make them come true!
           </p>
-          <Link 
-            to="contact" 
-            spy={true} 
-            smooth={true} 
-            duration={500} 
-            className="book-now-btn"
-          >
+          <Link to="contact" spy={true} smooth={true} duration={500}>
             BOOK NOW
           </Link>
         </div>

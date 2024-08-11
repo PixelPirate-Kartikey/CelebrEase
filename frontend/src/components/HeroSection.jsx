@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="hero">
       <img src="/restaurant.jpg" alt="restaurant" />
       <div className="item">
-        <h3>Dream Maker</h3>
+        <h3>Celebrease</h3>
         <div>
           <h1>Your Personal Dream Maker</h1>
           <p>

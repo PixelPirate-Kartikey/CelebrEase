@@ -429,9 +429,3 @@ footer .banner .tag div button {
     grid-gap: 20px;
   }
 }
-
-
-/* Custom Cursor on Submit Button */
-.contact .banner:last-child .item form button:hover {
-  cursor: pointer;
-}
